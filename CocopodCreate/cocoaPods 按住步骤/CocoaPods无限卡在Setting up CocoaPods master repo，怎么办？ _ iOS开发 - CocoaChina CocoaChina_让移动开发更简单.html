@@ -1,0 +1,3268 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ | iOS开发 - CocoaChina CocoaChina_让移动开发更简单 </title>
+<meta name="generator" content="PHPWind 7.5 SP3" />
+<meta name="description" content="CocoaChina前身是全球成立最早规模最大的苹果开发中文站，现致力为所有移动开发者提供资讯服务、问答服务、代码下载、工具库及人才招聘服务。" />
+<meta name="keywords" content="CocoaPods无限卡在Setting,up,CocoaPods,master,repo，怎么办？,iOS开发,CocoaChina" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta property="qc:admins" content="516346650763737130161637572237" />
+<link rel='archives' title='CocoaChina' href='http://www.cocoachina.com/bbs/simple/' />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.cocoachina.com/bbs/rss.php?fid=21" />
+
+<base id="headbase" href="http://www.cocoachina.com/bbs/" />
+
+<link rel="stylesheet" type="text/css" href="http://cdn.cocimg.com/bbs/images/wind-reset.css" />
+
+<link rel="stylesheet" type="text/css" href="http://cdn.cocimg.com/bbs/data/bbscache/wind2013_wind2013.css?123" />
+<!--[if IE]>
+<style type="text/css">
+.tr1 td.td1{border-top:0}
+.t4{padding:0}
+.t table{border-collapse:collapse;}
+.t {padding:0}
+</style>
+<![endif]-->
+
+
+<link href="http://cdn.cocimg.com/bbs/css/forum.css?t=150318" rel="stylesheet" type="text/css" />
+<link href="http://cdn.cocimg.com/bbs/css/style.css?t=20141224011" rel="stylesheet" type="text/css" />
+<!--2014-11-17添加登录注册改版样式表-->
+<link href="http://cdn.cocimg.com/bbs/css/module.css?t=20141117011" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.middle {width: 1000px;margin: 0 auto;position: relative;}
+.login h3{display:block;}
+</style>
+<!--2014-11-17添加登录注册改版样式表 end-->
+
+<script src="http://cdn.cocimg.com/bbs/js/jquery-2.1.1.min.js" ></script>
+<script src="http://cdn.cocimg.com/bbs/js/forum.js?t=021201122" type="text/javascript" ></script>
+<SCRIPT type="text/javascript" LANGUAGE="JavaScript" src="http://www.cocoachina.com/bbs/js/core/core.js?t=1111" ></SCRIPT>
+<script type="text/javascript" language="JavaScript" src="http://www.cocoachina.com/bbs/js/pw_ajax.js?t=20120420" ></script>
+<script type='text/javascript' src='http://js.adm.cnzz.net/js/abase.js' ></script>
+<script type="text/javascript" src="http://s.csbew.com/k.js"></script>
+<!--2014/11/25 添加引用ssoclient.js-->
+
+<!--2014/11/25 添加引用ssoclient.js end-->
+<script language="JavaScript">
+var imgpath = 'images';
+var verifyhash = '06241d1c';
+var modeimg = '';
+var modeBase = '';
+var winduid = '';
+var windid	= '';
+var groupid	= 'guest';
+var basename = '';
+var temp_basename = '';
+ 
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?88399e4c4cf744609c4fc8c3a8935691";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body onkeydown="try{keyCodes(event);}catch(e){}" class="body_n">
+
+
+
+
+<div id="pw_box" class="" style="position: absolute; z-index: 10;"></div>
+
+
+
+<div class="top top_n">
+    <div class="forum_come forum_come_n">
+    	<!--<a style='float:left;background:none;color:#fff;font-size:12px;text-indent:0;line-height:24px' href='http://open.cocoachina.com' target='_blank'>Cocos开发者平台</a>
+		<a style='float:left;background:none;color:#fff;font-size:12px;text-indent:0;line-height:24px' href='http://cn.cocos2d-x.org' target='_blank'>Cocos引擎中文官网</a>
+		<a style='float:left;background:none;color:#fff;font-size:12px;text-indent:0;line-height:24px' href='http://store.cocos.com' target='_blank'>Cocos商店</a>-->
+
+	<form action="login.php" name="login_FORM" method="post">
+		<input type="hidden" name="jumpurl" value="http://www.cocoachina.com/bbs/read.php?tid=180484" />
+		<input type="hidden" name="step" value="2" />
+		<input type="hidden" name="cktime" value="31536000" />
+
+
+<a href="register.php" style="font-size: 14px;color: white;font-weight: bold;text-decoration: none;margin-top:1px" class="forum_button">注册</a>
+<a href="login.php" style="font-size: 14px;color: white;font-weight: bold;text-decoration: none;margin-top:1px" class="forum_button">登录</a>
+<!--<span>如果无法登录，请清理浏览器cookie后重新登录。</span>-->
+		
+
+		<input type="hidden" name="lgt" id="nav_lgt" value="0">
+
+		</form>
+
+
+    </div>
+</div>
+
+<div class="main-wrap main-wrap_n">
+<div class="main-wrap main-wrap_n">
+<div class="main main_n">
+
+    
+    	
+    		<div class="forum_logo forum_logo_n">
+                <a class="forum_toplogo" href="http://www.cocoachina.com"><img style="width:236px;" src="http://cdn.cocimg.com/assets/images/logo.png?15018"/></a>
+                
+                
+	<div style="float:right;margin-top:10px;margin-right:5px">
+                    <script type="text/javascript">
+                        _acK({aid:115851,format:0,mode:1,gid:1,serverbaseurl:"afp.csbew.com/"});
+                    </script>
+                </div> 
+            </div>
+            
+       <!-- 导航-->
+       	<div class="h-nav">
+        	<div class="h-navr">
+            	<div class="h-navl">
+                	<ul id="nav-lv0" class="hn-lv1 clearfix">
+                    	<li class="first"><a href="/" target="_blank">首页</a></li>
+
+<li><a href="/news/" target="_blank">资讯</a></li>
+
+                        
+                        <li><a href="http://code.cocoachina.com/" target="_blank">代码库</a></li>
+                        <li><a href="http://tools.cocoachina.com/" target="_blank">工具库</a></li>
+     	
+<li><a href="/bbs" class="cur">论坛</a></li>
+
+                   
+
+
+<!--<li><a href="/bbs/thread.php?fid=41">Cocos2d-x</a></li>
+<li><a href="/bbs/thread.php?fid=48">Cocos专区</a></li>-->
+
+
+
+
+                        <li><a href="http://blog.cocoachina.com" target="_blank">博客</a></li>
+                        <li><a href="http://job.cocoachina.com" target="_blank">招聘</a></li>
+                        <li><a href="/events/">活动</a>
+                        <li><a href="/bbs/hack.php?H_name=qiandao">每日签到</a>
+                    </ul>
+                    <div id="nav-box0" class="hn-lv2">
+                    	<ul class="ul1 clearfix">
+		<li><a data-lv='1-1-8' href="/special/fornew.html" target="_blank"><span>新手入门</span></a></li>
+                           
+                            <li><a data-lv='1-1-8' href="/special/index.html" target="_blank"><span>专题</span></a></li>
+                           
+                            <li><a data-lv='1-1-10' href="http://www.cocoachina.com/calendar/" target="_blank"><span>新闻日历</span></a></li>
+
+                        </ul>
+
+
+                        <ul class="ul1 clearfix">
+                        	
+                        	<li><a data-lv='1-1-1' href="/ios/"><span>iOS开发</span></a></li>
+                            <li><a data-lv='1-1-2' href="/game/"><span>游戏开发</span></a></li>
+                            <li><a data-lv='1-1-3' href="/swift/"><span>Swift</span></a></li>
+                            <li><a data-lv='1-1-4' href="/apple/"><span>苹果相关</span></a></li>
+                            <li><a data-lv='1-1-5' href="/appstore/"><span>App Store研究</span></a></li>
+                            <li><a data-lv='1-1-6' href="/cocos/"><span>Cocos引擎</span></a></li>
+                            <li><a data-lv='1-1-7' href="/market/"><span>营销推广</span></a></li>
+                            <li><a data-lv='1-1-8' href="/industry/"><span>业界动态</span></a></li>
+
+                        </ul>
+
+	<ul class="ul1 clearfix"></ul>
+     	
+                        <ul class="ul1 clearfix"></ul>
+<ul class="ul1 clearfix" style="display:block;height:25px;overflow:hidden">
+                        
+	<!--<li><a href="/special/cocos2014/"><span style="color:red">开发者大会图文实录</span></a></li>-->
+                        	<li><a data-lv='1-4-1' href="/bbs/thread.php?fid-2.html"><span>OS X开发</span></a></li>
+	<li><a data-lv='1-4-1' href="/bbs/thread.php?fid-57.html"><span>Swift专区</span></a></li>
+                            <li><a data-lv='1-4-2' href="/bbs/thread.php?fid-21.html"><span>iOS开发</span></a></li>
+                            <li><a data-lv='1-4-3' href="/bbs/thread.php?fid-14.html"><span>App Store经验交流</span></a></li>
+                            <li><a data-lv='1-4-4' href="/bbs/thread.php?fid-23.html"><span>美术区</span></a></li>
+                            <li><a data-lv='1-4-5' href="/bbs/thread.php?fid=18"><span>游戏开发区</span></a></li>
+                            <li><a data-lv='1-4-6' href="/bbs/thread.php?fid-5.html"><span>议事大厅</span></a></li>
+                            <li><a data-lv='1-4-7' href="/bbs/thread.php?fid-72.html"><span>CVP专区</span></a></li>
+                            <!-- <li><a data-lv='1-4-7' href="/bbs/thread.php?fid-26.html"><span>招聘外包区</span></a></li> -->
+
+                        </ul>
+
+<ul class="ul1 clearfix"></ul>
+<ul class="ul1 clearfix"></ul>
+
+                        <ul class="ul1 clearfix">
+                        	<li><a href="http://code.cocoachina.com/" target="_blank"><span>代码库</span></a></li>
+                            <li><a href="http://d.cocoachina.com/job/" target="_blank"><span>招聘</span></a></li>
+                            <li><a href="http://d.cocoachina.com/task/lists/" target="_blank"><span>外包</span></a></li>
+                            <li><a href="http://d.cocoachina.com/brand/" target="_blank"><span>App Store应用排行</span></a></li>
+                            <li><a href="http://d.cocoachina.com/promocode/" target="_blank"><span>发码</span></a></li>
+                            <li><a href="http://d.cocoachina.com/signature/" target="_blank"><span>签名</span></a></li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="search1">
+                    	<form action="/bbs/search.php?ss=index#submit" name="formsearch" method="post">                		
+                            <input type="hidden" name="step" value="2">
+                            <input type="hidden" name="method" value="AND">
+                            <input type="hidden" name="sch_area" value="0">
+                            <input type="hidden" name="f_fid" value="all">
+                             
+                            <input type="hidden" name="sch_time" value="all">
+                            <input style="width:189px;padding:5px;height:26px;float:left"  name="keyword"  type="text" value="论坛搜索"  onfocus="if (value =='论坛搜索'){value =''}" onBlur="if (value ==''){value='论坛搜索'}"/><input type="image" style="float:left" src="http://cdn.cocimg.com/bbs/images/wind2013/searchbtn.png?123" />
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+<div style="padding:10px 0 0;text-align:center;width:1000px;"><div style="display:inline-block;margin-right:20px;"><script>CNZZ_SLOT_RENDER('294801');</script></div><div style="display:inline-block;"><script>CNZZ_SLOT_RENDER('294800');</script></div></div>	
+	
+       		<div class="forum_centerbox forum_centerbox_n">
+                    <div class="forum_centercontent">
+
+
+
+<div class="forum_kong"></div>
+
+<div class="forum_tags">
+ 
+                         
+                         	<div class="forum_tagsbj1">
+                                <div class="forum_tagsbjr">
+                                   <div class="forum_tags_leftbj">
+
+                                        <div class="forum_n">
+		<div class="forum_nav forum_mr">
+                                            	<style type="text/css">
+#nav1 {left:154px}
+#nav2 {left:406px}
+#nav3 {left:584px}
+.forum_tags_leftbj h5 {width:30%}
+.forum_n {width:70%}
+</style>
+<ul >
+                                                	<li class="forum_men"><span></span><strong><a href="/bbs/invitation.php">好友邀请</a></strong><font></font></li>
+                                                    <li class="forum_men"><span></span><strong><a href="sort.php?action=member">会员排行</a></strong><font></font></li>
+
+		
+<li class="a1" onMouseOver="menu(0 +1)" onMouseOut="menu(0+2)">
+	
+		
+	<a href="javascript:;" id="td_KEYapp">社区应用</a></li>
+	<div id="nav1" onMouseOver="menu(0+1)" onMouseOut="menu(0+2)">
+	<ul>
+
+
+
+                        <li><a href="apps.php?q=article" id="td_KEYapp_article">帖子</a></li>
+
+
+
+
+
+                        <li><a href="apps.php?q=photos" id="td_KEYapp_photos">相册</a></li>
+
+
+
+
+
+                        <li><a href="apps.php?q=diary" id="td_KEYapp_diary">日志</a></li>
+
+
+
+
+
+                        <li><a href="apps.php?q=groups" id="td_KEYapp_groups">群组</a></li>
+
+
+
+
+
+                        <li><a href="apps.php?q=hot" id="td_KEYapp_hot">热榜</a></li>
+
+
+
+
+
+                        <li><a href="apps.php?q=share" id="td_KEYapp_share">分享</a></li>
+
+
+
+
+
+                        <li><a href="apps.php?q=write" id="td_KEYapp_write">记录</a></li>
+
+
+
+</ul>
+		</div>
+
+		<li class="forum_men"><span></span><strong><a href="search.php?sch_time=newatc" id="td_KEYlastpost">最新帖子</a></strong><font></font></li>
+
+		<li class="forum_men"><span></span><strong><a href="search.php?digest=1" id="td_KEYdigest">精华区</a></strong><font></font></li>
+	
+<li class="a2" onMouseOver="menu(2+1)" onMouseOut="menu(2+2)">
+		
+	<a href="javascript:;" id="td_KEYhack">社区服务</a></li>
+	<div id="nav2" onMouseOver="menu(2+1)" onMouseOut="menu(2+2)">
+	<ul>
+
+
+
+                        <li><a href="hack.php?H_name=medal" id="td_KEYhack_medal">勋章中心</a></li>
+
+
+
+
+
+                        <li><a href="hack.php?H_name=toolcenter" id="td_KEYhack_toolcenter">道具中心</a></li>
+
+
+
+</ul>
+		</div>
+
+		<li class="forum_men"><span></span><strong><a href="member.php" id="td_KEYmember">会员列表</a></strong><font></font></li>
+	
+<li class="a3" onMouseOver="menu(4+1)" onMouseOut="menu(4+2)">
+		
+	<a href="sort.php" id="td_KEYsort">统计排行</a></li>
+	<div id="nav3" onMouseOver="menu(4+1)" onMouseOut="menu(4+2)">
+	<ul>
+
+
+
+                        <li><a href="sort.php" id="td_KEYsort_basic">基本信息</a></li>
+
+
+
+
+
+                        <li><a href="sort.php?action=ipstate" id="td_KEYsort_ipstate">到访IP统计</a></li>
+
+
+
+
+
+                        <li><a href="sort.php?action=team" id="td_KEYsort_team">管理团队</a></li>
+
+
+
+
+
+                            <li><a href="sort.php?action=ckad" id="td_KEYsort_admin">管理操作</a></li>
+
+
+
+
+
+                        <li><a href="sort.php?action=online" id="td_KEYsort_online">在线会员</a></li>
+
+
+
+
+
+                        <li><a href="sort.php?action=forum" id="td_KEYsort_forum">版块排行</a></li>
+
+
+
+
+
+                        <li><a href="sort.php?action=article" id="td_KEYsort_article">帖子排行</a></li>
+
+
+
+
+
+                        <li><a href="job.php?action=taglist" id="td_KEYsort_taglist">标签排行</a></li>
+
+
+
+</ul>
+		</div>
+
+
+<li class="forum_men"><span></span><strong><a href="columns.php?action=columns">左右分栏</a></strong><font></font></li>
+
+<li class="forum_men"><span></span><strong><a href="faq.php">帮助</a></strong><font></font></li>
+                                                
+                                           </ul>
+	   </div>
+                                        </div>
+                                   </div>
+                                   <div clas="clear"></div>
+	 <div class="forum_tags_rightbj" style="height: 45px;">
+		<h3><span class="a1">热门标签:</span>
+
+	<a href="job.php?action=tag&tagname=%BA%EF%C4%EA%B0l%D8%94"><span></span><strong>猴年發財</strong><font></font></a>
+
+	<a href="job.php?action=tag&tagname=ios"><span></span><strong>ios</strong><font></font></a>
+
+	<a href="job.php?action=tag&tagname=%BF%AA%B7%A2"><span></span><strong>开发</strong><font></font></a>
+
+	<a href="job.php?action=tag&tagname=%CE%CA%CC%E2"><span></span><strong>问题</strong><font></font></a>
+
+	<a href="job.php?action=tag&tagname=app"><span></span><strong>app</strong><font></font></a>
+
+		
+</h3>
+		<h4><a href="rss.php" target="_blank" title="RSS订阅本版面最新帖子"><img src="http://cdn.cocimg.com/bbs/images/forum_images/forum_rss.jpg" /></a>
+
+		</h4>
+		<!--<h3 style="width: 100%;height:25px;"><span class="a1">最近更新:</span>
+		
+		</h3>
+		
+		
+		</h3>-->
+		</div>
+		</div>
+	</div>
+  </div> 
+                    	 
+                                  
+
+
+<link rel="stylesheet" type="text/css" href="all.css" />
+<link type="text/css" rel="stylesheet" href="/bbs/css/jquery.fancybox-min.css"/>
+<script type="text/javascript" src="http://cdn.cocimg.com/bbs/js/scripts/shCore.js"></script>
+	<script type="text/javascript" src="http://cdn.cocimg.com/bbs/js/scripts/brush.js?121"></script>
+	<link type="text/css" rel="stylesheet" href="js/styles/shCoreDefault.css?122"/>
+	<script type="text/javascript">
+	//SyntaxHighlighter.config.clipboardSwf = '/js/scripts/clipboard.swf';
+
+	SyntaxHighlighter.all();</script>
+	
+<style type="text/css">
+.sigline {margin-top:10px;margin-left:15px;background: url(http://cdn.cocimg.com/bbs/images/wind2013/read/sigline.gif) right bottom no-repeat;margin-right:30em;height:5px;}
+.signature {padding:10px 15px 0;height:expression(this.scrollHeight>parseInt(this.currentStyle.maxHeight)?this.currentStyle.maxHeight:"auto");}
+.user-pic img {border: 1px solid #E0E0E0;background:#fff;padding:3px; max-width:180px;}
+.tpc_content img{max-width:100%}
+.small {font-size:12px}
+.middle {font-size:14px}
+.big {font-size:18px}
+.dig{font-size:12px;background-color:#ffffee; background-position:-22px -57px;padding:0 .4em 0 1.6em;cursor: pointer;color:#666;border:1px solid #ffd0a8;height:18px;line-height:18px;margin:12px 5px 10px 15px;}
+.dig:hover {text-decoration:none;border:1px solid #f5a25c;color:#ff6600;}
+.readbot {padding:0px;}
+.readbot a{list-style:none;padding:0 0 0 1.5em;margin:0;float:left;cursor:pointer;background:url(http://cdn.cocimg.com/bbs/images/wind2013/read/yin.gif) no-repeat;width:3.5em;height:16px;}
+.readbot .r-quote:hover{background-position:0 0;}
+.readbot .r-reply:hover {background-position:0 -20px;}
+.readbot .r-score:hover {background-position:0 -40px;}
+.readbot .r-keep:hover {background-position:0 -60px;}
+.readbot .r-recommend:hover {background-position:0 -160px;}
+.readbot .r-report:hover{background-position:0 -200px;}
+.readbot .r-quote {background-position:0 -80px;}
+.readbot .r-reply {background-position:0 -100px;}
+.readbot .r-score {background-position:0 -120px;}
+.readbot .r-keep {background-position:0 -140px;}
+.readbot .r-recommend {background-position:0 -180px;}
+.readbot .r-report {background-position:0 -220px;}
+.down {background:url(http://cdn.cocimg.com/bbs/images/post/down.gif) 5px center no-repeat;padding:5px 5px 5px 30px;border:#E0E0E0 1px solid;margin:0 1em 0 0;line-height:40px;}
+.img-50{width:48px;height:48px;}
+.user-info2{color:#72788e;}
+.font12{color:#333;}
+/*分类信息*/
+.cates{margin:0 0 10px;}
+.cates .cate-list li{padding:2px 0 1px 10px;font-weight:500;color:#444444; list-style:none; clear: both;}
+.cates .cate-list em{ font-style:normal;width:100px;float:left;}
+.cates .cate-list cite{font-style:normal; width: 500px; float: left;}
+.cates .cate-list li:after{content:"."; visibility: hidden;display: block;overflow: hidden;height:0;clear:both}
+.cates input{ vertical-align:middle;}
+.cates .w{margin-right:10px;}
+.cates .two{background:#ffffff;}
+.app-post{background:url(http://cdn.cocimg.com/bbs/images/app-post.png);display:block;float:left;color:#ffffff;width:78px;height:26px;line-height:25px;padding-left:17px; }
+.app-post:hover{ text-decoration:none; background-position:0 -50px;}
+.cate_meg_player {float:right;width:200px;padding:0 10px 9px 0;margin-right:10px;background:#fff;}
+/*flash*/
+.flash{position:relative;}
+.flash img{height:100%;width:100%;}
+.flash ul {position:absolute;right:8px;bottom:8px;z-index:3;}
+.flash ul li {list-style:none;float:left;width:18px;height:13px;line-height:13px;text-align:center;margin-left:2px;background:#ffffff;}
+.flash ul li a {display:block;width:18px;height:13px;font-size:10px;font-family:Tahoma;color:#333333;}
+.flash ul li a:hover,.flash ul li a.sel {color:#fff;text-decoration:none;background:#ffa900;}
+
+/*ping*/
+.score{margin:10px 15px;padding-top:10px;border-top:1px dashed #E0E0E0;line-height:22px;}
+.score td{padding:2px 10px 2px 5px;}
+.score th{padding:6px 0 0;}
+.score tr:hover{background:#ffffff;}
+.score a{color:#3366cc;}
+/*overprint*/
+.overprint_opl a{display:block;float:left;padding:3px;margin:3px}
+.overprint_opl a.current{border:1px solid #ccc;padding:2px}
+.overprint_opl a:hover{border:1px solid #ddd;padding:2px;background:#fff9f0}
+.overprint_opl {height:200px;overflow:auto;}
+
+.tipad .fr a{padding:0 0 0 6px;}
+.certificate{position: relative;padding:1px;}
+.certificate img{border:0 none!important;padding:0!important;}
+.certificate .v-logo{position:absolute;width:90px;height:35px;background:url(http://cdn.cocimg.com/bbs/images/wind2013/img_all_251.png) no-repeat 0 -120px;right:0px; top:-10px;}
+.cocoachina_copyright{display:none}
+</style>
+
+<div id="menu_forumlist" style="display:none;">
+	<div class="sbar-box-a" style="width:700px;">
+		<div class="sbar-title" style="cursor:pointer" onclick="try{pw_bottom.hiddenTab();read.close();}catch(e){read.close();}">
+	<span class="menu-hidden aimg">隐藏</span>
+	<span id="title_forumlist" class="b">快速浏览</span>
+		</div>
+		<div class="sbar-box-b">
+<div class="forum-list-popout">
+
+<dl class="cc">
+	<dt>
+
+	<a href="index.php?cateid-1.html">苹果开发</a>
+
+	</dt>
+	<dd class="cc">
+
+		<a href="thread.php?fid-21.html" onclick="return pwForumList(true,gIsPost,21);"><span>iOS开发</span></a>
+
+		<a href="thread.php?fid-2.html" onclick="return pwForumList(true,gIsPost,2);"><span>macOS开发</span></a>
+
+		<a href="thread.php?fid-57.html" onclick="return pwForumList(true,gIsPost,57);"><span>Swift</span></a>
+
+		<a href="thread.php?fid-8.html" onclick="return pwForumList(true,gIsPost,8);"><span>开发资源分享区</span></a>
+
+		<a href="thread.php?fid-19.html" onclick="return pwForumList(true,gIsPost,19);"><span>代码例子区</span></a>
+
+	</dd>
+</dl>
+
+<dl class="cc">
+	<dt>
+
+	<a href="index.php?cateid-66.html">App开发</a>
+
+	</dt>
+	<dd class="cc">
+
+		<a href="thread.php?fid-18.html" onclick="return pwForumList(true,gIsPost,18);"><span>独立游戏</span></a>
+
+		<a href="thread.php?fid-62.html" onclick="return pwForumList(true,gIsPost,62);"><span>应用开发</span></a>
+
+		<a href="thread.php?fid-60.html" onclick="return pwForumList(true,gIsPost,60);"><span>WebApp</span></a>
+
+		<a href="thread.php?fid-23.html" onclick="return pwForumList(true,gIsPost,23);"><span>美术设计</span></a>
+
+	</dd>
+</dl>
+
+<dl class="cc">
+	<dt>
+
+	<a href="index.php?cateid-31.html">App Store</a>
+
+	</dt>
+	<dd class="cc">
+
+		<a href="thread.php?fid-14.html" onclick="return pwForumList(true,gIsPost,14);"><span>App Store经验交流</span></a>
+
+		<a href="thread.php?fid-36.html" onclick="return pwForumList(true,gIsPost,36);"><span>App上线推广</span></a>
+
+		<a href="thread.php?fid-38.html" onclick="return pwForumList(true,gIsPost,38);"><span>限免专区</span></a>
+
+	</dd>
+</dl>
+
+<dl class="cc">
+	<dt>
+
+	<a href="index.php?cateid-4.html">会员交流区</a>
+
+	</dt>
+	<dd class="cc">
+
+		<a href="thread.php?fid-5.html" onclick="return pwForumList(true,gIsPost,5);"><span>综合议事大厅</span></a>
+
+		<a href="thread.php?fid-10.html" onclick="return pwForumList(true,gIsPost,10);"><span>外包/交易/宣传区</span></a>
+
+		<a href="thread.php?fid-63.html" onclick="return pwForumList(true,gIsPost,63);"><span>公告活动区</span></a>
+
+		<a href="thread.php?fid-11.html" onclick="return pwForumList(true,gIsPost,11);"><span>客服专区</span></a>
+
+		<a href="thread.php?fid-29.html" onclick="return pwForumList(true,gIsPost,29);"><span>CocoaChina社区内部讨论区</span></a>
+
+	</dd>
+</dl>
+
+<dl class="cc">
+	<dt>
+
+	<a href="index.php?cateid-33.html">游戏引擎</a>
+
+	</dt>
+	<dd class="cc">
+
+		<a href="thread.php?fid-41.html" onclick="return pwForumList(true,gIsPost,41);"><span>Cocos2d-x</span></a>
+
+		<a href="thread.php?fid-59.html" onclick="return pwForumList(true,gIsPost,59);"><span>Cocos2d-JS</span></a>
+
+		<a href="thread.php?fid-48.html" onclick="return pwForumList(true,gIsPost,48);"><span>Cocos</span></a>
+
+		<a href="thread.php?fid-71.html" onclick="return pwForumList(true,gIsPost,71);"><span>Cocos Creator</span></a>
+
+		<a href="thread.php?fid-72.html" onclick="return pwForumList(true,gIsPost,72);"><span>CVP专区</span></a>
+
+		<a href="thread.php?fid-56.html" onclick="return pwForumList(true,gIsPost,56);"><span>Cocos2d-lua（quick-cocos2d-x)</span></a>
+
+		<a href="thread.php?fid-65.html" onclick="return pwForumList(true,gIsPost,65);"><span>AnySDK</span></a>
+
+		<a href="thread.php?fid-50.html" onclick="return pwForumList(true,gIsPost,50);"><span>Scut游戏服务器引擎</span></a>
+
+		<a href="thread.php?fid-22.html" onclick="return pwForumList(true,gIsPost,22);"><span>Unity游戏引擎</span></a>
+
+	</dd>
+</dl>
+
+</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="breadCrumb"> 
+	<div class="forum_tatle_leftbj">
+	<div class="forum_tatle_rightbj">
+		<span style="line-height:40px;float:left;"><img style="cursor:pointer" id="td_cate" src="images/wind2013/thread/home.gif"  onClick="return pwForumList(false,false,null,this);" align="absmiddle" /> <a href="http://www.cocoachina.com/bbs/index.php?m=bbs" title="CocoaChina">CocoaChina</a> &raquo; <a href="thread.php?fid-21.html">iOS开发</a> &raquo; <a href="read.php?tid-180484.html">CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？</a></span> <a href="rss.php?tid-180484.html" target="_blank" title="Rss订阅本帖最新内容"><img src="http://cdn.cocimg.com/bbs/images/wind2013/rss.png" align="absbottom" style="float:left;margin:13px 0 0 15px;" /></a>
+	
+
+</div>
+</div>
+</div>
+<div class="c"></div>
+<!--ads begin-->
+
+
+<div class="t3 cc">
+
+
+<span class="fr" style="margin-right:10px;"><a href="post.php?fid=21" title="发表新帖"><img src="http://cdn.cocimg.com/bbs/images/forum_images/forum_link.jpg" id="td_post1" style="margin-right:5px;"/></a></span>
+
+
+
+	<div style="padding-top:8px;"><span class="pages"><a href="job.php?action=previous&fid=21&tid=180484&fpage=0&goto=previous" class="fn" style="margin-left:10px;">上一主题</a><a href="job.php?action=previous&fid=21&tid=180484&fpage=0&goto=next" class="fn">下一主题</a></span> <span class="fl"><div class="pages"><a href="read.php?tid-180484-page-1.html" class="b">&laquo;</a><b>1</b><a href="read.php?tid-180484-page-2.html">2</a><a href="read.php?tid-180484-page-3.html">3</a><a href="read.php?tid-180484-page-4.html">4</a><a href="read.php?tid-180484-page-4.html">&raquo;</a><span class="pagesone">
+                    <span>Pages: 1/4</span>
+                    <input type="text" size="3" onkeydown="javascript: if(event.keyCode==13){ location='read.php?tid=180484&page='+this.value+'';return false;}">
+                    <button onclick="javascript:  location='read.php?tid=180484&page='+this.previousSibling.value+'';return false;">Go</button>
+                </span></div></span></div>
+</div>
+
+<div id="menu_post" class="menu menu-post cc f14 tac" style="display:none;">
+	<div class="menu-b" style="width:100px;">
+
+		<a href="post.php?fid=21" hidefocus="true">新  帖</a>
+
+	</div>
+</div>
+
+<div class="t" style="margin-bottom:0;border-bottom:0;">
+	<table cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+
+<td class="h" style="border-bottom:0;line-height:42px;">
+<div class="forum_listcontent_tatleleft">
+            <div class="forum_listcontent_tatleright">
+<div class="tal m" style="width:70%;float:left;">
+
+<span style="float:left;margin-top:0px;overflow:hidden;height:40px">主题 : CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？</span>
+
+
+
+
+
+
+</div>
+
+
+
+<div class="tar" style="border-bottom:0;width:30%;float:left;">
+	<div class="fr w">
+<script type='text/javascript'>
+function changefollower(u,tid){
+	if(u.index == 1){
+		u.index = 2;
+		u.title= "关注本帖";
+		u.innerHTML = "关注本帖";
+		sendmsg('pw_ajax.php?action=folower&tid='+tid+'&folower=2','',this.id);
+	}else{
+		u.index = 1;
+		u.title="取消关注";
+		u.innerHTML = "取消关注";
+		sendmsg('pw_ajax.php?action=folower&tid='+tid+'&folower=1','',this.id);
+	}
+}
+
+</script>
+
+		<a  style="cursor:pointer;margin:0 15px 0 0;float:left;color: red;" onclick="changefollower(this,180484);" id="follower" title="关注本帖，如果有新回复会站内信通知您" /></a>
+
+
+		<a id="usetool" style="cursor:pointer;margin:9px 5px 0 0;float:left;" onclick="sendmsg('pw_ajax.php?action=usetool','',this.id)" /><img src="http://cdn.cocimg.com/bbs/images/forum_images/forum_contentsy.jpg"></a>
+
+		<a style="cursor:pointer;margin:9px 5px 0 0;float:left;" title="http://www.cocoachina.com/bbs/read.php?fid=21&tid=180484" onclick="copyUrl('');"><img src="http://cdn.cocimg.com/bbs/images/forum_images/forum_contentlj.jpg"></a>
+
+		</div></div>
+		</div>
+		</div>
+		</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+
+<form name="delatc" method="post">
+	<input type="hidden" name="fid" value="21" />
+	<input type="hidden" name="tid" value="180484" />
+
+	<a name=tpc></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=277977" target="_blank">wildcat</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=277977" target="_blank" id="card_sf_tpc_277977" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_tpc"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 新手上路<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/20.gif" style="margin:.2em 0 .2em 0;display:block"/> </div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_0">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+	UID: <span class="font12">277977</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">34</span><br />
+
+	可可豆: <span class="s2 font12">157 CB</span><br />
+
+	威望: <span class="s3 font12">179 点</span><br />
+
+	在线时间: <span class="font12">17(时)</span><br />
+
+	注册时间: <span class="gray">2013-11-26</span><br />
+	最后登录: <span class="gray">2015-03-11</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_tpc" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_tpc"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('tpc')" title="复制此楼地址">楼主 ：</a>
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-01-13 08:37" style="white-space:nowrap;">发表于: <span class="s3">2014-01-13 08:37</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+<div style="float:left;width:200px;margin-left:20px"><div class="bshare-custom" style="margin-top:5px"><div class="bsPromo bsPromo2"></div><a title="分享到新浪微博" class="bshare-sinaminiblog" href="javascript:void(0);"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到人人网" class="bshare-renren" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script></div>
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="read.php?tid-180484-ordertype-desc.html" title="倒序阅读">倒序阅读</a>&nbsp;<b style="margin:8px 0 0 5px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=277977');return false;" title="只看楼主的所有帖子">只看楼主</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','tpc')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','tpc')">中</a> <a style="cursor:pointer" onclick="fontsize('big','tpc')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+
+
+<div class="fr blockquote" style="margin:10px 15px;">来源于&nbsp;<a href="thread.php?fid-21-type-85.html">一般提问</a>&nbsp;分类</div>
+
+
+<h1 id="subject_tpc" style="margin:0 0 15px 15px;">CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？&nbsp;&nbsp;&nbsp;
+
+
+</h1>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_tpc" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_tpc" style="clear:both">
+                        
+
+<div class="fr" style="clear:right;margin:0 0 10px 10px;">
+    <script type="text/javascript">
+        _acK({aid:115855,format:0,mode:1,gid:1,serverbaseurl:"afp.csbew.com/"});
+    </script>
+</div>
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+执行任何命令都是这样，我开了一夜电脑都还是这样，挂VPN貌似也是这样<br />怎么办？<br /> <span id="att_62959"><b></b><br><img src="http://cdn.cocimg.com/bbs/attachment/Fid_21/21_277977_236c3ba7cba855d.png" border="0"  ></span> 
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_tpc" class="c"></div>
+
+
+
+<div style="padding:10px 0 0 10px;">
+    <script type="text/javascript">
+        _acK({aid:115857,format:0,mode:1,gid:1,serverbaseurl:"afp.csbew.com/"});
+    </script>
+</div>
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 楼主(wildcat) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=tpc&article=0&page=1" onclick="return sendurl(this,4,'',event)" id="quote_tpc" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=tpc','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=873358></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=4020" target="_blank">wode211</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  
+
+		<a href="http://d.cocoachina.com/certificate/" title="已经补充个人信息"><div class="v-logo" ></div></a>
+	
+<a href="u.php?action=feed&uid=4020" target="_blank" id="card_sf_873358_4020" class="userCard" style="border:none;"><img class="pic" src="http://cc.cocimg.com/bbs/attachment/Fid_5/5_4020_ea62dc1db76cdc3.jpg" width="150" height="150" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_873358"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别:  <b><font color="#e60012">论坛版主</font></b><br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/5.gif" style="margin:.2em 0 .2em 0;display:block"/> <img src="hack/medal/image/8.gif" title="灌水天才奖" /> <img src="hack/medal/image/319.gif" title="五周年勋章" /> <img src="hack/medal/image/SPII_87.gif" title="代码之星" /> <img src="hack/medal/image/5_98590_ce4052fe82a650b.gif" title="月饼" /> <img src="hack/medal/image/123456.gif" title="6周年勋章" /> <img src="hack/medal/image/2.gif" title="优秀斑竹奖" /> <img src="hack/medal/image/sevenyears.gif" title="7周年勋章" /> <br /></div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_1">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+状态: <a href=hack.php?H_name=qiandao><span class=gray>未签到</span></a> - [<span class="s3 f9">341天</span>]</br>
+
+	UID: <span class="font12">4020</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">433</span><br />
+
+	可可豆: <span class="s2 font12">24887 CB</span><br />
+
+	威望: <span class="s3 font12">25988 点</span><br />
+
+	在线时间: <span class="font12">3383(时)</span><br />
+
+	注册时间: <span class="gray">2009-04-02</span><br />
+	最后登录: <span class="gray">2016-06-16</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_873358" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_873358"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('873358')" title="复制此楼地址">沙发 ：</a>
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-01-13 09:18" style="white-space:nowrap;">发表于: <span class="s3">2014-01-13 09:18</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=4020');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','873358')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','873358')">中</a> <a style="cursor:pointer" onclick="fontsize('big','873358')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_873358"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_873358" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_873358" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+重新安装或者更新 cocoapods试试？
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_873358" class="c"></div>
+
+		<div class="sigline"></div>
+		<div class="signature" style="max-height:300px;maxHeight:300px; overflow:hidden;">
+<div width="100%" style="max-height:200px; text-align:left;">
+	
+		一直在努力，一直都觉得努力得还不够～～<br /><a href="http://www.etware.com" target="_blank" >www.etware.com</a><br /><a href="http://weibo.com/1879887524?s=6uyXnP" target="_blank" ><img src="http://service.t.sina.com.cn/widget/qmd/1879887524/6d797160/10.png" border="0"  ></a>
+	
+</div>
+		</div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 1楼(wode211) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=873358&article=1&page=1" onclick="return sendurl(this,4,'',event)" id="quote_873358" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=873358','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=875228></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=96069" target="_blank">jkguang@126.com</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=96069" target="_blank" id="card_sf_875228_96069" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_875228"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 新手上路<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/20.gif" style="margin:.2em 0 .2em 0;display:block"/> </div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_2">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+	UID: <span class="font12">96069</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">1</span><br />
+
+	可可豆: <span class="s2 font12">1 CB</span><br />
+
+	威望: <span class="s3 font12">1 点</span><br />
+
+	在线时间: <span class="font12">9(时)</span><br />
+
+	注册时间: <span class="gray">2011-10-03</span><br />
+	最后登录: <span class="gray">2014-07-21</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_875228" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_875228"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('875228')" title="复制此楼地址">板凳 ：</a>
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-01-15 23:35" style="white-space:nowrap;">发表于: <span class="s3">2014-01-15 23:35</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=96069');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','875228')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','875228')">中</a> <a style="cursor:pointer" onclick="fontsize('big','875228')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_875228"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_875228" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_875228" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+一样遇到这个问题，一直卡在那里。是不是被墙了，但是应该怎么解决？？？求指导
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_875228" class="c"></div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 2楼(jkguang@126.com) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=875228&article=2&page=1" onclick="return sendurl(this,4,'',event)" id="quote_875228" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=875228','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=886058></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=233153" target="_blank">木有木有</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=233153" target="_blank" id="card_sf_886058_233153" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_886058"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 新手上路<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/20.gif" style="margin:.2em 0 .2em 0;display:block"/> </div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_3">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+状态: <a href=hack.php?H_name=qiandao><span class=gray>未签到</span></a> - [<span class="s3 f9">2天</span>]</br>
+
+	UID: <span class="font12">233153</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">2</span><br />
+
+	可可豆: <span class="s2 font12">65 CB</span><br />
+
+	威望: <span class="s3 font12">8 点</span><br />
+
+	在线时间: <span class="font12">29(时)</span><br />
+
+	注册时间: <span class="gray">2013-07-18</span><br />
+	最后登录: <span class="gray">2016-02-19</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_886058" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_886058"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('886058')" title="复制此楼地址">3 楼：</a>&nbsp;
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-02-11 16:20" style="white-space:nowrap;">发表于: <span class="s3">2014-02-11 16:20</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=233153');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','886058')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','886058')">中</a> <a style="cursor:pointer" onclick="fontsize('big','886058')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_886058"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_886058" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_886058" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+求问楼主。你解决了么？我也遇到了。
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_886058" class="c"></div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 3楼(木有木有) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=886058&article=3&page=1" onclick="return sendurl(this,4,'',event)" id="quote_886058" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=886058','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=886801></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=79295" target="_blank">fcuppvtkd</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=79295" target="_blank" id="card_sf_886801_79295" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_886801"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 新手上路<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/20.gif" style="margin:.2em 0 .2em 0;display:block"/> </div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_4">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+	UID: <span class="font12">79295</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">1</span><br />
+
+	可可豆: <span class="s2 font12">1 CB</span><br />
+
+	威望: <span class="s3 font12">1 点</span><br />
+
+	在线时间: <span class="font12">35(时)</span><br />
+
+	注册时间: <span class="gray">2011-07-04</span><br />
+	最后登录: <span class="gray">2015-04-26</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_886801" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_886801"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('886801')" title="复制此楼地址">4 楼：</a>&nbsp;
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-02-12 17:14" style="white-space:nowrap;">发表于: <span class="s3">2014-02-12 17:14</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=79295');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','886801')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','886801')">中</a> <a style="cursor:pointer" onclick="fontsize('big','886801')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_886801"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_886801" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_886801" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+出现Setting up CocoaPods master repo，说明Cocoapods在将它的信息下载到 ~/.cocoapods里，cd&nbsp;&nbsp;到该目录里，用du -sh *命令来查看文件大小，每隔几分钟查看一次，我的这个目录最终大小是123M，就是完成了
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_886801" class="c"></div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 4楼(fcuppvtkd) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=886801&article=4&page=1" onclick="return sendurl(this,4,'',event)" id="quote_886801" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=886801','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=887988></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=85153" target="_blank">wwwxl</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=85153" target="_blank" id="card_sf_887988_85153" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_887988"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 新手上路<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/20.gif" style="margin:.2em 0 .2em 0;display:block"/> </div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_5">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+	UID: <span class="font12">85153</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">28</span><br />
+
+	可可豆: <span class="s2 font12">173 CB</span><br />
+
+	威望: <span class="s3 font12">73 点</span><br />
+
+	在线时间: <span class="font12">108(时)</span><br />
+
+	注册时间: <span class="gray">2011-08-04</span><br />
+	最后登录: <span class="gray">2016-05-13</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_887988" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_887988"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('887988')" title="复制此楼地址">5 楼：</a>&nbsp;
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-02-14 22:57" style="white-space:nowrap;">发表于: <span class="s3">2014-02-14 22:57</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=85153');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','887988')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','887988')">中</a> <a style="cursor:pointer" onclick="fontsize('big','887988')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_887988"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_887988" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_887988" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+请耐心等待，如果没有耐心，请更换ruby的源为淘宝的的ruby源，没记错的话应该是ruby.taobao.org吧。
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_887988" class="c"></div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 5楼(wwwxl) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=887988&article=5&page=1" onclick="return sendurl(this,4,'',event)" id="quote_887988" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=887988','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=892651></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=21910" target="_blank">jackyzhou</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=21910" target="_blank" id="card_sf_892651_21910" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/attachment/upload/10/21910.jpg" width="150" height="150" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_892651"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 圣骑士<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/23.gif" style="margin:.2em 0 .2em 0;display:block"/> <img src="hack/medal/image/319.gif" title="五周年勋章" /> <br /></div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_6">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+	UID: <span class="font12">21910</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">398</span><br />
+
+	可可豆: <span class="s2 font12">3577 CB</span><br />
+
+	威望: <span class="s3 font12">3567 点</span><br />
+
+	在线时间: <span class="font12">1762(时)</span><br />
+
+	注册时间: <span class="gray">2010-06-10</span><br />
+	最后登录: <span class="gray">2016-06-15</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_892651" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_892651"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('892651')" title="复制此楼地址">6 楼：</a>&nbsp;
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-02-24 18:58" style="white-space:nowrap;">发表于: <span class="s3">2014-02-24 18:58</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=21910');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','892651')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','892651')">中</a> <a style="cursor:pointer" onclick="fontsize('big','892651')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_892651"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_892651" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_892651" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+果然要等好久呀 哈哈哈
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_892651" class="c"></div>
+
+		<div class="sigline"></div>
+		<div class="signature" style="max-height:300px;maxHeight:300px; overflow:hidden;">
+<div width="100%" style="max-height:200px; text-align:left;">
+	
+		君子务本，本立而道生。
+	
+</div>
+		</div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 6楼(jackyzhou) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=892651&article=6&page=1" onclick="return sendurl(this,4,'',event)" id="quote_892651" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=892651','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=903687></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=296815" target="_blank">gannicus</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=296815" target="_blank" id="card_sf_903687_296815" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_903687"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 新手上路<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/20.gif" style="margin:.2em 0 .2em 0;display:block"/> </div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_7">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+状态: <a href=hack.php?H_name=qiandao><span class=gray>未签到</span></a> - [<span class="s3 f9">3天</span>]</br>
+
+	UID: <span class="font12">296815</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">3</span><br />
+
+	可可豆: <span class="s2 font12">20 CB</span><br />
+
+	威望: <span class="s3 font12">14 点</span><br />
+
+	在线时间: <span class="font12">0(时)</span><br />
+
+	注册时间: <span class="gray">2014-03-03</span><br />
+	最后登录: <span class="gray">2014-06-13</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_903687" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_903687"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('903687')" title="复制此楼地址">7 楼：</a>&nbsp;
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-03-15 00:35" style="white-space:nowrap;">发表于: <span class="s3">2014-03-15 00:35</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=296815');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','903687')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','903687')">中</a> <a style="cursor:pointer" onclick="fontsize('big','903687')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_903687"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_903687" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_903687" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+原来如此，在等安装了。
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_903687" class="c"></div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 7楼(gannicus) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=903687&article=7&page=1" onclick="return sendurl(this,4,'',event)" id="quote_903687" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=903687','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=916806></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=207587" target="_blank">wwwang89</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=207587" target="_blank" id="card_sf_916806_207587" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_916806"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 骑士<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/22.gif" style="margin:.2em 0 .2em 0;display:block"/> <img src="hack/medal/image/sevenyears.gif" title="7周年勋章" /> <br /></div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_8">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+状态: <a href=hack.php?H_name=qiandao><span class=gray>未签到</span></a> - [<span class="s3 f9">100天</span>]</br>
+
+	UID: <span class="font12">207587</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">317</span><br />
+
+	可可豆: <span class="s2 font12">802 CB</span><br />
+
+	威望: <span class="s3 font12">620 点</span><br />
+
+	在线时间: <span class="font12">386(时)</span><br />
+
+	注册时间: <span class="gray">2013-01-30</span><br />
+	最后登录: <span class="gray">2016-06-16</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_916806" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_916806"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('916806')" title="复制此楼地址">8 楼：</a>&nbsp;
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-04-02 10:07" style="white-space:nowrap;">发表于: <span class="s3">2014-04-02 10:07</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=207587');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','916806')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','916806')">中</a> <a style="cursor:pointer" onclick="fontsize('big','916806')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_916806"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_916806" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_916806" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+ <img src="images/post/smile/default/9.gif" />&nbsp;&nbsp;<img src="images/post/smile/default/9.gif" />&nbsp;&nbsp;<img src="images/post/smile/default/9.gif" /> 
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_916806" class="c"></div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 8楼(wwwang89) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=916806&article=8&page=1" onclick="return sendurl(this,4,'',event)" id="quote_916806" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=916806','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+	<a name=922632></a>
+	<div class="forum_center" style="background:none;margin-top:0;">
+		<div class="forum_center_left">
+		<div class="forum_center_right">
+		<div>
+		<div class="t5" style="border:none;width:98%;margin-left:9px;">
+		
+		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout:fixed;">
+<tr>
+	<td style="width:185px;vertical-align:top;background:#f2f3f7;border-right:1px solid #ccc;height:100%;" rowspan="2" >
+	<div>
+		<div class="cc" style="padding-bottom:3px;height:25px;margin:5px 0 0 35px"><b class="fl black"><a href="u.php?action=feed&uid=198484" target="_blank">ftxbird</a></b>
+
+
+
+	</div>
+
+		<div class="user-pic">
+<table style="border:0;">
+	<tr>
+		<td>
+		<div class="tac  certificate">
+		  	
+<a href="u.php?action=feed&uid=198484" target="_blank" id="card_sf_922632_198484" class="userCard" style="border:none;"><img class="pic" src="http://cdn.cocimg.com/bbs/attachment/upload/84/1984841391642014.png" width="150" height="150" border="0" /></a>
+		</div>
+                </td>
+		<td width="1" style="vertical-align:top"><span id="sf_922632"></span></td>
+	</tr>
+</table>
+		</div>
+		<div style="padding:5px 0 2px;margin-left:35px;">级别: 新手上路<br />
+		<img src="http://cdn.cocimg.com/bbs/images/wind2013/level/20.gif" style="margin:.2em 0 .2em 0;display:block"/> <img src="hack/medal/image/sevenyears.gif" title="7周年勋章" /> <br /></div>
+		<span class="user-info2" >
+<span class="user-infoWrap2">
+
+</span>
+		</span>
+
+		<span class="user-info2" id="showface_9">
+
+<span class="user-infoWrap2" style="margin-left:35px;float:left;">
+	<div class="c"></div>
+
+	UID: <span class="font12">198484</span><br />
+	精华:
+
+	<span class="s4">0</span>
+
+	<br />
+	发帖: <span class="s1 font12">14</span><br />
+
+	可可豆: <span class="s2 font12">42 CB</span><br />
+
+	威望: <span class="s3 font12">32 点</span><br />
+
+	在线时间: <span class="font12">179(时)</span><br />
+
+	注册时间: <span class="gray">2013-01-02</span><br />
+	最后登录: <span class="gray">2016-05-22</span><br />
+
+
+
+
+	</span>
+                          
+</span>
+		</div>
+	</td>
+	<td height="100%"  valign="top" id="td_922632" style="padding:0px;border:0;overflow:hidden;margin-right:-15px;width:100%"> <a name="post_922632"></a>
+		<div style="overflow:hidden; position:absolute;margin-top:25px;" id="read_overprint">
+
+		</div>
+		<div class="tiptop cc" style="margin-bottom:15px;"><span class="fl">
+
+<a class="s3 b" style="cursor:pointer;" onclick="copyUrl('922632')" title="复制此楼地址">9 楼：</a>&nbsp;
+
+
+</span>
+<span class="fl gray"  style="margin-left:8px;" title="2014-04-09 20:07" style="white-space:nowrap;">发表于: <span class="s3">2014-04-09 20:07</span></span>
+                        <span title="" class="fl gray">&nbsp;&nbsp;
+
+                      发自: <font class="s3">Web Page</font>  </span>
+
+
+
+
+<div class="fr black" style="overflow:hidden;">
+
+	<a href="javascript:;" onclick="window.location=('read.php?tid=180484&uid=198484');return false;" title="只看该作者的所有回复">只看该作者</a>&nbsp;<b style="margin:8px 0 0 3px;"><img src="http://cdn.cocimg.com/bbs/images/forum_images/line.jpg"></b>&nbsp;
+
+	<a style="cursor:pointer" onclick="fontsize('small','922632')">小</a> <a style="cursor:pointer" onclick="fontsize('middle','922632')">中</a> <a style="cursor:pointer" onclick="fontsize('big','922632')">大</a></div>
+		</div>
+		<div class="c"></div>
+
+<div class="read_h1" id="subject_922632"></div>
+
+
+
+
+
+
+
+
+		<div class="c"></div>
+
+
+
+
+		<div class="tpc_content">
+<div id="p_922632" class="c"></div>
+
+
+
+
+		
+
+ 
+
+
+
+<div class="f14" id="read_922632" style="clear:both">
+                        
+
+                        
+                        <div class="cocoachina_copyright">本帖属于<a href="http://www.cocoachina.com">CocoaChina</a>会员发表，转帖请写明来源和帖子地址</div>
+我也一直卡在这, 按楼上的方法 更换淘宝源 然后查看那个文件大小 一直是&nbsp;&nbsp;56K&nbsp;&nbsp;&nbsp;&nbsp;repos
+ 
+<br /> 
+
+
+</div>
+
+
+
+		</div>
+
+	</td>
+</tr>
+<tr class="r_one">
+	<td style="vertical-align:bottom;padding:0;">
+
+
+
+
+		<div id="w_922632" class="c"></div>
+
+
+
+		<div class="tipad cc" style="border-top:1px solid #bbb;height:30px;margin-left:15px;">
+
+<div class="fl readbot" style="margin-top:10px;">
+
+	<a class="r-reply" title="回复此楼" href="javascript:;" onclick="postreply('回 9楼(ftxbird) 的帖子');">回复</a>
+
+	<a class="r-quote" href="post.php?action=quote&fid=21&tid=180484&pid=922632&article=9&page=1" onclick="return sendurl(this,4,'',event)" id="quote_922632" title="引用回复这个帖子">引用</a>
+
+
+</div>
+		
+<div class="fr gray" style="margin-top:10px;">
+
+
+<a onclick="sendmsg('pw_ajax.php?action=report&type=topic&tid=180484&pid=922632','',this.id);" title="举报此帖" style="cursor:pointer;">举报</a><a href="javascript:scroll(0,0)" title="顶端">顶端</a>
+		</div>
+		</div>
+	</td>
+</tr>
+		</table>
+		</div>
+		<div style="width:auto;margin:0 10px 0 9px;border-bottom:1px solid #bbb;height:1px;overflow:hidden;"></div>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+
+</form>
+
+<div class="t3" style="margin-top:20px;">
+
+	<span class="fr" style="margin-left:.5em; margin-right:5px"><a href="post.php?fid=21" title="发表新帖"><img src="http://cdn.cocimg.com/bbs/images/forum_images/forum_link.jpg" id="td_post1" style="margin-right:5px;" /></a></span>
+
+	<span class="fr"></span><span class="pages"><a href="job.php?action=previous&fid=21&tid=180484&fpage=0&goto=previous" class="fn" style="margin-left:10px;">上一主题</a><span class="fl"><a href="job.php?action=previous&fid=21&tid=180484&fpage=0&goto=next" class="fn">下一主题</a></span></span> <span class="fl"><div class="pages"><a href="read.php?tid-180484-page-1.html" class="b">&laquo;</a><b>1</b><a href="read.php?tid-180484-page-2.html">2</a><a href="read.php?tid-180484-page-3.html">3</a><a href="read.php?tid-180484-page-4.html">4</a><a href="read.php?tid-180484-page-4.html">&raquo;</a><span class="pagesone">
+                    <span>Pages: 1/4</span>
+                    <input type="text" size="3" onkeydown="javascript: if(event.keyCode==13){ location='read.php?tid=180484&page='+this.value+'';return false;}">
+                    <button onclick="javascript:  location='read.php?tid=180484&page='+this.previousSibling.value+'';return false;">Go</button>
+                </span></div></span>
+	<div class="c"></div>
+</div>
+<div class="c"></div>
+<div class="bc" style="margin-bottom:10px;"> 
+	<div class="forum_tatle_leftbj1">
+	<div class="forum_tatle_rightbj1">
+
+
+
+	<img src="http://cdn.cocimg.com/bbs/images/wind2013/thread/home-old.gif" align="absmiddle" style="margin-top:-5px;margin-left:15px;"/>&nbsp;<a href="http://www.cocoachina.com/bbs/index.php?m=bbs" style="line-height:45px;">CocoaChina</a> <span style="line-height:45px;">&raquo; </span><a href="thread.php?fid-21.html" style="line-height:45px;"><font color="#0088CC">iOS开发</font></a>
+	</div>
+	</div>
+	</div>
+<div class="c"></div>
+
+<div id="checkurl" class="menu menu-post" style="display:none;">
+	<div class="menu-b tac">
+		<table width="290" cellspacing="0" cellpadding="0">
+<tr>
+	<th class="h" colspan="2"><span id="suburl">http://www.cocoachina.com/bbs</span></th>
+</tr>
+<tr>
+	<td colspan="2">访问内容超出本站范围，不能确定是否安全</td>
+</tr>
+<tr>
+	<td><a href="" target="_blank" onclick="closep();" id="trueurl">继续访问</a></td>
+	<td><a href="javascript:;" onclick="closep();">取消访问</a></td>
+</tr>
+		</table>
+	</div>
+</div>
+
+
+<script language="JavaScript">
+var tid = '180484';
+var fid = '21';
+var mt;
+var totalpage = parseInt('4');
+var db_ajax = '10';
+var page = parseInt('1');
+var jurl = 'read.php?tid=180484&fpage=0&toread=0&page=';
+var db_htmifopen = '1';
+var db_dir = '.php?';
+var db_ext = '.html';
+var db_bbsurl = 'http://www.cocoachina.com/bbs';
+var copyurl = 'http://www.cocoachina.com/bbs/read.php?tid=180484' + (page > 1 ? '&page=' + page : '') + '#';
+
+var db_urlcheck = 'cocoachina.com,qq.com,cocos.com,chukong-inc.com,coco.cn,wenjuan.com,modian.com,www.modian.com,punchbox.org,cnzz.net,talkingdata.net,huodongxing.com,t.cn,apple.com,cocimg.com,www.cocoachina.com,youku.com,github.com,csdn.net,appgame.com,docs.google.com,google.com,google.cn,iphonetw.net,heju3g.cn,cc.cocimg.com,t.sina.com.cn,weibo.com,bit.ly,cocos2d-x.org,163.com,cnrainbird.com';
+
+window.onReady(userCard.init);
+
+//pingpage
+function showPingPage(fid, tid, pid) {
+	if (getObj('pingPage_'+pid).style.display == "none") {
+		pingHideCtrl(pid);
+	}
+	var pingPageNum = getObj('pingPageNum_'+pid).value * 1;
+	ajax.send("pw_ajax.php?action=pingpage", "page="+pingPageNum+"&fid="+fid+"&tid="+tid+"&pid="+pid, function(){
+		var gotText = ajax.request.responseText;
+
+		var trs=gotText.split("<!-- splitTr -->");
+		var tr, td, trData, pingId, pingIdMatch;
+		for(var i=1,len=trs.length;i<len;i++) {
+pingIdMatch = trs[i].match(/<\!\-\- pingId\:(\d+) \-\->/i);
+pingId = pingIdMatch[1];
+trData = trs[i].split("<!-- split -->");
+
+tr = document.createElement("tr");
+tr.id = 'pingLogTr_' + pingId;
+tr.onmouseover = function() {showPingDelLink(this, true)};
+tr.onmouseout = function() {showPingDelLink(this, false)};
+td = document.createElement("th");
+td.innerHTML = trData[0];
+tr.appendChild(td);
+
+for(var j=1; j<=6; j++) {
+	td = document.createElement("td");
+	td.innerHTML = trData[j];
+	tr.appendChild(td);
+}
+getObj('pingPage_'+pid).appendChild(tr);
+		}
+		if (gotText.indexOf('__pingPageOver__') != -1) { getObj('pingMore_'+pid).style.display='none';return ;}
+	});
+	getObj('pingPageNum_'+pid).value = pingPageNum + 1;
+}
+function delPingLog(fid, tid, pid, pingid) {
+	if (confirm("你确定要删除这条评分动态么？")) {
+		read.obj = getObj("pingDel_"+pingid);
+		read.guide();
+		ajax.send("pw_ajax.php?action=delpinglog", "fid="+fid+"&tid="+tid+"&pid="+pid+"&pingid="+pingid, function(){
+if (ajax.request.responseText == 'success') {
+	showDialog('success','删除评分动态成功！');
+	getObj('pingPage_'+pid).removeChild(getObj('pingLogTr_'+pingid));
+} else {
+showDialog('error','删除评分动态出错！');
+}
+		});
+	}
+}
+function showPingDelLink(trObj, isShow) {
+	pingId = trObj.id.match(/\d+/i);
+	linkObj = getObj("pingDel_"+pingId);
+	if (linkObj) {
+		linkObj.style.display = isShow ? '' : 'none';
+	}
+}
+function pingHideCtrl(pid) {
+	if (getObj('pingPage_'+pid).style.display == "") {
+		getObj('pingPage_'+pid).style.display = "none";
+		getObj('pingHide_'+pid).innerHTML = "显示评分记录";
+	} else {
+		getObj('pingPage_'+pid).style.display = "";
+		getObj('pingHide_'+pid).innerHTML = "隐藏评分记录";
+	}
+}
+</script>
+<script type="text/javascript" language="JavaScript" src="js/pw_lwd.js"></script>
+
+<style>
+
+.emoji{ width:23px; height:30px;float:right; position:relative}
+.emoji2{ width:125px; height:20px;float:left; position:relative}
+.pr{line-height: 30px; height: 30px;}
+.atc_title{width:100px; float:left}
+
+</style>
+<form name="FORM" method="post" action="post.php?" enctype="multipart/form-data" onsubmit="return checkpost(document.FORM);" id="anchor">
+	
+<table cellPadding="0" cellSpacing="0" style="display:none;margin-top:20px;">
+	<tbody id="att_mode">
+	<tr>
+		<td ><input class="input" type="file" name="attachment_"  style="font-size:14px;" /></td>
+		<td><span style="vertical-align:middle;">描述 </span><input class="input" type="text" name="atc_desc" size="18" /></td>
+		<td style="height:25px;line-height:25px;"></td>
+		</tr>
+	</tbody>
+</table>
+<link rel="stylesheet" type="text/css" href="http://cdn.cocimg.com/bbs/images/post/fast_editor.css" />
+<div class="t">
+	<input type="hidden" name="atc_usesign" value="1" />
+	<input type="hidden" name="atc_convert" value="1" />
+	<input type="hidden" name="atc_autourl" value="1" />
+	<input type="hidden" value="2" name="step" />
+	<input type="hidden" value="reply" name="action" />
+	<input type="hidden" value="21" name="fid" />
+	<input type="hidden" value="180484" name="tid" />
+	<input type="hidden" name="verify" value="06241d1c" />
+	<input type="hidden" value="cn0zz" name="_hexie" />
+	<table width="100%">
+		<tr>
+<td class="h" colspan="3">
+	<div class="forum_content_tatleleft">
+	<div class="forum_content_tatleright">
+		<b>快速回复</b>
+	</div>
+	</div>
+</td>
+		</tr>
+		</table>
+		</div>
+		<div class="forum_center" style="background:#fff;ovrflow:hidden;">
+<div class="forum_center_left">
+<div class="forum_center_right">
+		<table style="width:99%;">
+		<tr class="vt" >
+		
+<td style="width:165px;height:349px;margin-left:10px;">
+	<div class="fp_left">
+                	<div style="_height:26px;">
+		<p class="b" style="padding:0 0 0 11px;"></p>
+		</div>
+		<div style="margin:5px 10px;" class="cc">
+                    	<div style="background:#fff;padding:2px;border:1px solid #E0E0E0;float:left;"><img class="pic" src="http://cdn.cocimg.com/bbs/images/face/none.gif" border="0" /></div>
+                    </div>
+	</div>
+	<div class="fp_left" style="margin-left:5px;">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- CC论坛头像下方160x120 -->
+		<ins class="adsbygoogle"
+ style="display:inline-block;width:160px;height:120px"
+ data-ad-client="ca-pub-1180518835303646"
+ data-ad-slot="9718743560"></ins>
+		<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	
+	</div>	
+</td>
+<td style="background:#fff;">
+	<div class="fp_content">
+		<div class="cc" style="margin-bottom:5px;">
+<div class="pr">
+	<div class="input" style="height:28px;width:213px;float:left;">
+		<input type="text"  id="atc_title" name="atc_title" value="Re:CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？" size="20" style="font-size:14px;width:195px;border:0;background:none;margin-top:5px;"/>
+	</div>
+	<div style="float:left;line-height: 25px;margin: 3px 0 0 25px;height: 25px;">
+		<input type="checkbox" name="attention"/><span style="margin-left:5px;line-height:25px;height:25px;">关注本帖</span>(如果有新回复会站内信通知您)
+	</div>
+	<br />
+<div class="w_input_text" id="atc_title_warn" style="display:none;">限 100 字节</div></div>
+
+
+
+</div>
+
+
+                 
+
+<div class="fp_editor cc" id="fp_editor" onclick="loadEditor(event);">
+<div class="fp_editor_but cc">
+	<a href="javascript:gotoEditor();" class="fr" hidefocus="true" id="gotoedit">进入高级模式</a>
+	<div>
+		<a href="javascript:;" title="加粗" id="wy_bold" hidefocus="true">加粗</a>
+		<a href="javascript:;" title="字体颜色" id="wy_forecolor" hidefocus="true">字体颜色</a>
+		<a href="javascript:;" title="背景" id="wy_hilitecolor" hidefocus="true">背景颜色</a>
+		<a href="javascript:;" title="插入链接" id="wy_createlink" hidefocus="true">插入链接</a>
+		<a href="javascript:;" title="图片" id="wy_insertimage" hidefocus="true">图片</a>
+		
+		
+	</div>
+</div>
+
+ 
+<div style="padding:0.5% 0 0 0.5%;width:99.5%;display:inline;float:left;">
+	<textarea id="textarea" name="atc_content" style="width:100%;height:140px;" ></textarea>
+	<span id="autosave"></span><div id="menu_editor" class="wy_menu_B" style="display: none;"></div>
+</div>
+		</div>
+		<div>
+
+<style type="text/css">
+.dtA{width:75px;margin-right:5px;}
+.fpbtn{margin-left:80px;}
+</style>
+<dl class="cc">
+	<dt class="dtA">验证问题:</dt>
+	<dd><input class="input" type="text" name="qanswer" /> <input type="hidden" name="qkey" value="0" />3*3+1 正确答案:10</dd>
+</dl>
+		</div>
+                    <p style="padding:10px 0 0;color:#666">发帖、回帖都会得到可观的积分奖励。<a href="/bbs/faq.php?hid=28#faq28" target="_blank" style="color:#3366cc">查看论坛积分规则</a></p>
+		<div class="mt10"><input class="btn" type="submit" name="Submit" value="提 交" /> <span class="s3">按"Ctrl+Enter"直接提交</span></div>
+	</div>
+</td>
+<td style="width:250px;">
+
+	<div id="fp_face" class="fp_show">
+		<div class="fp_show_tab">
+<b id="doleft" style="display:none" class="tab_left fl" onclick="PwFace.showTab(-1)" title="上一个">上一个</b>
+<b id="doright" style="display:none" class="tab_right fr" onclick="PwFace.showTab(1)" title="下一个">下一个</b>
+<ul id="face_tab"></ul>
+		</div>
+
+		<div class="fp_show_cont">
+                    	<div class="fp_show_height">
+<ul id="face_main" class="cc">
+                        
+                        </ul>
+                        </div>
+                        
+                        <div id="face_page" class="fp_show_pages cc"></div>
+
+	</div>
+		</div></td>
+		</tr>
+	</table>
+	</div>
+	</div>
+		<div class="forum_content_bottom2">
+<div class="forum_content_bottomleft2">
+<div class="forum_content_bottomright2">
+</div>
+</div>
+		</div>
+	</div>
+	
+	</form>
+
+<script type="text/javascript">
+document.FORM._hexie.value = '4baf393d';
+var charset='gbk';
+var bbsurl ="http://www.cocoachina.com/bbs";
+var editor = null;
+function WysiwygConfig() {
+	this.baseURL = document.baseURI || document.URL;
+	if (this.baseURL && this.baseURL.match(/(.*)\/([^\/]?)/)) {
+		this.baseURL = RegExp.$1 + "/";
+	}
+	this.imgURL = imgpath + "/post/c_editor/";
+
+	this.btnList = {
+		bold: [ true, editorcode, true ],
+		forecolor: [ true, showcolor, false ],
+		hilitecolor: [ true, showcolor, false ],
+		createlink: [ true, showcreatelink, false ],
+		unlink: [ true, editorcode, false ],
+		insertimage: [ true, insertImage, false ]
+	};
+	this.selList = [];
+};
+function loadEditor(e) {
+	var e = is_ie ? event : e;
+	var o = e.srcElement || e.target;
+	if (o.id == 'gotoedit') return;
+
+	$('fp_editor').onclick = '';
+	loadjs('js/wind_c_editor.js', '', '', function() {
+		editor = new WYSIWYD();
+		editor.config = new WysiwygConfig();
+		editor.init();
+		if (o.id && o.id.match(/^wy\_/)) {
+var key = o.id.substr(3);
+if (typeof editor.config.btnList[key]) {
+	var cmd = editor.config.btnList[key][1];
+	cmd(key);
+}
+		}
+	});
+}
+var dataStorage = {
+	save : function() {
+		if (PwStorage.save('msg', document.FORM.atc_content.value)) {
+PwStorage.save('title', document.FORM.atc_title.value, 1);
+SetCookie('ds', 1);
+return true;
+		}
+		return false;
+	},
+	load : function() {
+		document.FORM.atc_title.value = PwStorage.load('title') || '';
+		var msg = PwStorage.load('msg');
+		if (msg) {
+document.FORM.atc_content.value = msg;
+document.FORM.atc_content.focus();
+		}
+		SetCookie('ds', 0);
+	}
+}
+function gotoEditor() {
+	dataStorage.save();
+	location.href = 'post.php?fid=21&action=reply&tid=180484';
+}
+</script>
+
+<script language="JavaScript" src="http://cdn.cocimg.com/bbs/data/bbscache/face.js"></script>
+<script language="JavaScript" src="http://cdn.cocimg.com/bbs/js/post.js?1"></script>
+<script language="javascript">
+document.FORM.Submit.disabled = false;
+var charset = 'gbk';
+var stylepath = 'wind2013';
+var cate = '0';
+var cnt = 0;
+
+
+PwFace.init('face_tab', 'face_main', 3, 16);
+function checkpost(obj){
+	if(cate==1 && obj.p_type!=null && obj.p_type.value==0){
+		showDialog("error","没有选择主题分类",2);
+		obj.p_type.focus();
+		return false;
+	}
+	if(obj.atc_title.value==""){
+		showDialog("error","标题不能为空",2);
+		obj.atc_title.focus();
+		return false;
+	} else if(strlen(obj.atc_title.value)>100){
+		showDialog("error","标题超过最大长度 100 个字节",2);
+		obj.atc_title.focus();
+		return false;
+	}
+	if(strlen(obj.atc_content.value)<10){
+		showDialog("error","文章内容少于 10 个字节",2);
+		obj.atc_content.focus();
+		return false;
+	} else if(strlen(obj.atc_content.value)>500000){
+		showDialog("error","文章内容大于 500000 个字节",2);
+		obj.atc_content.focus();
+		return false;
+	}
+	document.FORM.Submit.disabled = true;
+	cnt++;
+	if(cnt!=1){
+		showDialog("warning","Submission Processing. Please Wait");
+		return false;
+	}
+	if (is_ie && newAtt.aid < 2) {
+		document.FORM.encoding = "application/x-www-form-urlencoded";
+	}
+	return true;
+}
+
+function checklength(theform,postmaxchars){
+	if(postmaxchars != 0){
+		message = '<br />系统限制最大字节数:'+postmaxchars+' 字节';
+	} else{
+		message = '';
+	}
+	showDialog("warning",'您的信息已有字节数: '+strlen(theform.atc_content.value)+' 字节'+message);
+}
+function addsmile(NewCode){
+    $('textarea').value += ' [s:'+NewCode+'] ';
+}
+window.onbeforeunload = function() {
+	saveData('msg', document.FORM.atc_content.value);
+}
+if (FetchCookie('ds') == 1) {
+	try{dataStorage.load();}catch(e){}
+}
+window.onload = function(){
+	var menus = getObj("face_tab").getElementsByTagName('li');
+	if(menus){
+		showTabBtn(menus.length);
+	}
+}
+</script>
+
+<script type="text/javascript">
+var _ONLOAD=window.onload;
+window.onload=function(){
+	_ONLOAD?_ONLOAD():0;
+	var allElement=document.FORM.elements;
+	document.FORM.onsubmit = function(){
+		popLogin();
+		return false;
+	}
+	var obj = document.getElementById("fs_gdcode");
+	if(obj){
+		obj.onfocus = function(){
+return false;
+		}
+	}
+	for (var i=0,len=allElement.length;i<len;i++){
+		if(document.all){
+allElement[i].attachEvent('onclick',function(){
+	popLogin();
+})
+		}else{
+allElement[i].addEventListener("click",function(){
+	popLogin();
+},false)
+		}
+	}
+}
+function popLogin(){
+	sendmsg('http://www.cocoachina.com/bbs/pw_ajax.php?action=poplogin&anchor=anchor&tid=180484&fpage=0&toread=0&page=1','');
+}
+</script>
+
+
+<script language="javascript" src="http://cdn.cocimg.com/bbs/js/jquery.fancybox-min.js?09" type="text/javascript"></script>
+<script type="text/javascript">
+
+/**jQuery(function() {
+	jQuery(".tpc_content img").each(function() {
+		if(jQuery(this).attr('id')=='confirm_sent_img'){return false;}
+		
+		//if(jQuery(this).attr('width')=='240'){return false;}
+		var _this = jQuery(this);
+		if(jQuery("#read_tpc .container").has(_this).length == 0) {
+var _src = _this.attr("src").toString();
+_this.click(function() {
+	jQuery.fancybox({
+		openEffect	: 'elastic',
+		closeEffect	: 'elastic',
+		href: _src
+	});
+})
+		}
+	})
+})
+**/
+</script>
+
+
+</div>
+
+
+                    </div>
+		</div>
+                    
+    </div></div>            
+ 	
+    
+    <div class="footer1">
+
+
+<div class="f-wrap clearfix">
+
+
+            <div class="fl f-ls">
+                <a href="http://www.cocoachina.com"><img src="http://cdn.cocimg.com/bbs/images/wind2013/f-logo.png" width="200" height="72" alt="CocoaChina苹果开发中文站" /></a><br />
+                <a href="http://www.cocoachina.com/cms/data/sitemap.html" class="fl-link">网站地图</a><br />
+                <a href="http://www.cocoachina.com/contactus/index.html" class="fl-link fl-l2">联系我们</a><br />
+                
+          	<a href="job.php?action=erasecookie&verify=a06c23cb" class="fl-link fl-l2">清除Cookies</a><br />
+            <a href="3g/index.php" class="fl-link fl-l2">手机浏览</a><br />
+
+            </div>
+            
+            <div class="f-rs">
+                <ul class="fr-list" style="min-width:920px">
+                    <li>
+                        <h4><a href="/">首页</a></h4>
+                         <a href="/game/" title="游戏开发" target="_blank"><span>游戏开发</span></a>
+		<a href="/appstore/" title="App Store研究" target="_blank"><span>App Store研究</span></a>
+		<a href="/ios/" title="iOS开发" target="_blank"><span>iOS开发</span></a>
+		<a href="/game/" title="游戏开发" target="_blank"><span>游戏开发</span></a>
+		<a href="/cocos/" title="Cocos引擎" target="_blank"><span>Cocos引擎</span></a>
+		<a href="/industry/" title="业界动态" target="_blank"><span>业界动态</span></a>
+		<a href="/design/" title="产品设计" target="_blank"><span>产品设计</span></a>
+		<a href="/programmer/" title="程序人生" target="_blank"><span>程序人生</span></a>
+                    </li>
+                    <li>
+                        <h4><a href="/bbs/">开发者服务</a></h4>
+                       <a href="/bbs/" title="论坛" target="_blank"><span>论坛</span></a>
+		 <a href="/ask/" title="技术问答" target="_blank"><span>技术问答</span></a>
+		 <a href="http://d.cocoachina.com/" title="开发者中心" target="_blank"><span>开发者中心</span></a>
+		 <a href="http://code.cocoachina.com/" title="代码库" target="_blank"><span>代码库</span></a>
+		 <a href="http://tools.cocoachina.com/" title="工具库" target="_blank"><span>工具库</span></a>
+                    </li>
+                    <li>
+                        <h4><a href="http://store.cocos.com" target="_blank">Cocos商店</a></h4>
+                        <a href="http://store.cocos.com/contest.html" target="_blank">上传大赛</a>
+                        
+                    </li>
+                    <li>
+                        <h4><a href="/bbs">论坛板块</a></h4>
+                        <a href="/bbs/thread.php?fid-2.html">OS X开发</a>
+                        <a href="/bbs/thread.php?fid-57.html">Swift专区</a>
+                        <a href="/bbs/thread.php?fid-21.html">iOS开发</a>
+                        <a href="/bbs/thread.php?fid-14.html">App Store经验交流</a>
+                        <a href="/bbs/thread.php?fid-23.html">美术区</a>
+                        <a href="/bbs/thread.php?fid=18">游戏开发区</a>
+                        <a href="/bbs/thread.php?fid-5.html">议事大厅</a>
+                        <!-- <a href="/bbs/thread.php?fid-26.html">招聘外包区</a> -->
+                        
+                    </li>
+                    <li>
+                        <h4><a href="http://d.cocoachina.com" target="_blank">开发者中心</a></h4>
+                        <a href="http://d.cocoachina.com/brand/" target="_blank">App Store应用排行</a>
+                        <a href="http://d.cocoachina.com/promocode/" target="_blank">发码</a>
+                        <a href="http://d.cocoachina.com/signature/" target="_blank">签名</a>
+                        <a href="http://d.cocoachina.com/faq/" target="_blank">FAQ</a>
+                    </li>
+                    <li class="last" style="width:150px">
+                    	<h4><a>关注CocoaChina</a></h4>
+                        <div>
+                            <span style="font-size:14px">关注微信 每日推荐</span><br />
+                            <img src="http://cdn.cocimg.com/cms/templets/img_new/cocoachina-weixin-100.jpg" width="100" height="100" alt="关注CocoaChina微信 获取每日文章推荐" />
+                        </div>
+                        
+                        <div style="margin-top:20px">
+                            <span style="font-size:14px">扫一扫 浏览移动版</span><br />
+                            <img src="http://cdn.cocimg.com/cms/templets/img_new/cocoachina-mobile-100.jpg" width="100" height="100" alt="扫一扫 浏览CocoaChina移动版" />
+                        </div>
+                        <div style="margin-top:20px">
+                            <a style="font-size:14px" href="mailto:support@cocoachina.com">客服邮箱</a>
+                       	</div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>    
+<div class="clear"></div>
+            
+            
+<h5 class="forum_footer_bottombj" style="height:auto"><span><a href="http://www.cocoachina.com/" style="text-decoration: none;color: #999;" target="_blank">&copy;2015 Chukong Technologies,Inc. | <strong>Cocoa China</strong> 苹果开发中文站 Powered by</a> <a href="http://www.phpwind.net/" style="text-decoration: none;color: #999;" target="_blank">phpwind </a><a href="http://www.phpwind.com/certificate.php?host=www.phpwind.net" target="_blank" style="text-decoration: none;color: #999;">Certificate Code</a> &copy; 2003-2010<a href="http://www.phpwind.com/" style="text-decoration: none;color: #999;" target="_blank"> phpwind.com</a> Corporation.</span><a href="http://www.miibeian.gov.cn/" target="_blank" style="text-decoration: none;color: #999;"><font style="margin-right:20px;">京公网安备<strong>11010502011183</strong></font><font style="margin-right:20px;">京ICP证<strong> 100954号</strong></font><font style="margin-right:20px;">京ICP备<strong> 11006519号</strong></font></a></h5>
+
+<script type="text/javascript">
+function mouseHover(navId, boxId) {
+	var _nav = jQuery("#"+navId);
+	var _box = jQuery("#"+boxId);
+	if(!_nav || !_box) {return;}
+	_nav.find("li a").bind('mouseover',function() {
+		var _i = jQuery(this).parent().index();
+		
+		_nav.find("li a").removeClass("cur");
+		_nav.find("li").eq(_i).find("a").addClass("cur");
+		_box.find("ul").hide();
+		if(_box.find("ul").eq(_i)) {
+_box.find("ul").eq(_i).show();
+		}
+	});
+}
+jQuery(function() {
+	mouseHover("nav-lv0", "nav-box0");
+	
+	var now_url = window.location.href;
+	var num = 0;
+	
+	if(now_url.search("/bbs/hack.php")!=-1){
+		num=7;
+	}
+
+
+	if (num){
+		jQuery("#nav-lv0 li a").removeClass("cur");
+		jQuery("#nav-lv0 li").eq(num).find("a").addClass("cur");
+		jQuery("#nav-box0 ul").hide();
+	}
+})
+
+
+function newrp() {
+	ajax.guide();
+	ajax.send('pw_ajax.php','action=newrp',function(){
+		if (ajax.request.responseText.indexOf('<') != -1) {
+read.menu.innerHTML = ajax.request.responseText;
+		} else {
+closep();
+getObj('newrp').parentNode.removeChild(getObj('newrp'));
+		}
+	});
+}
+</script>
+
+
+<script language="JavaScript" src="js/global.js?t=1201212031111"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16940817-2', 'auto');
+  ga('create', 'UA-68956228-1', 'auto', {'name': 'newTracker'});
+  ga('send', 'pageview');
+  ga('newTracker.send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+    _acK({aid:116315,format:0,mode:1,gid:1,serverbaseurl:"afp.csbew.com/"});
+</script>
+ </body>
+</html>
+<script language="JavaScript" src="js/app_global.js"></script>
+
+<script language="JavaScript">
+var openmenu = {'td_u' : 'menu_u','td_sort' : 'menu_sort','td_KEYapp' : 'menu_KEYapp','td_KEYhack' : 'menu_KEYhack','td_skin' : 'menu_skin','td_KEYsort' : 'menu_KEYsort','td_post' : 'menu_post','td_post1' : 'menu_post','td_special' : 'menu_special'};
+var openmenu = {'td_u' : 'menu_u','td_sort' : 'menu_sort','td_KEYapp' : 'menu_KEYapp','td_KEYhack' : 'menu_KEYhack','td_KEYsort' : 'menu_KEYsort','td_skin' : 'menu_skin','td_post' : 'menu_post','td_post1' : 'menu_post','td_special' : 'menu_special'};
+window.onReady(function(){
+	read.InitMenu();
+});
+WINDOW_LOADED=1;
+</script>
+
+
+
+
+
+<script language="JavaScript">
+function color() {
+                if(!document.getElementsByClassName){
+		document.getElementsByClassName = function(className, element){
+var children = (element || document).getElementsByTagName('*');
+var elements = new Array();
+for (var i=0; i<children.length; i++){
+	var child = children[i];
+	var classNames = child.className.split(' ');
+	for (var j=0; j<classNames.length; j++){
+		if (classNames[j] == className){ 
+elements.push(child);
+break;
+		}
+	}
+} 
+return elements;
+		};
+	}
+	
+                var trs = document.getElementsByClassName("tr3");
+                var i;
+	
+                for(i = 1; i <trs.length; i++) {
+                    //2.改变<tr>元素的背景颜色
+                    if(i % 2 == 0) {
+                        trs[i].style.background = "#FFFFFF";
+                    } else {
+                        trs[i].style.background = "#F3F3F3";
+                    }
+                }
+            }
+
+window.onload = color;
+
+            
+var openmenu = {'td_sort' : 'menu_sort','td_KEYapp' : 'menu_KEYapp','td_KEYhack' : 'menu_KEYhack','td_KEYsort' : 'menu_KEYsort','td_post' : 'menu_post','td_post1' : 'menu_post','td_admin' : 'menu_admin'};
+window.onReady(function(){
+	read.InitMenu();
+});
+WINDOW_LOADED=1;
+</script>
+
+
+
+ <a href="javascript:;" id="back2top">顶部</a>
+
+<!--
+EOT;
+?>-->

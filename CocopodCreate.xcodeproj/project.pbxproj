@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040702381D12DCB6008018CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040702371D12DCB6008018CF /* main.m */; };
+		0407023B1D12DCB6008018CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407023A1D12DCB6008018CF /* AppDelegate.m */; };
+		0407023E1D12DCB6008018CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407023D1D12DCB6008018CF /* ViewController.m */; };
+		040702411D12DCB6008018CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0407023F1D12DCB6008018CF /* Main.storyboard */; };
+		040702431D12DCB6008018CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040702421D12DCB6008018CF /* Assets.xcassets */; };
+		040702461D12DCB6008018CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040702441D12DCB6008018CF /* LaunchScreen.storyboard */; };
+		040702511D12DCB6008018CF /* CocopodCreateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040702501D12DCB6008018CF /* CocopodCreateTests.m */; };
+		0407025C1D12DCB6008018CF /* CocopodCreateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407025B1D12DCB6008018CF /* CocopodCreateUITests.m */; };
+		040704021D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 040703FF1D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive */; };
+		040704031D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 040703FF1D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive */; };
+		040704041D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 040703FF1D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive */; };
+		040704051D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html in Resources */ = {isa = PBXBuildFile; fileRef = 040704001D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html */; };
+		040704061D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html in Resources */ = {isa = PBXBuildFile; fileRef = 040704001D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html */; };
+		040704071D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html in Resources */ = {isa = PBXBuildFile; fileRef = 040704001D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html */; };
+		040704081D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 040704011D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive */; };
+		040704091D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 040704011D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive */; };
+		0407040A1D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 040704011D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0407024D1D12DCB6008018CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0407022B1D12DCB6008018CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040702321D12DCB6008018CF;
+			remoteInfo = CocopodCreate;
+		};
+		040702581D12DCB6008018CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0407022B1D12DCB6008018CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040702321D12DCB6008018CF;
+			remoteInfo = CocopodCreate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040702331D12DCB6008018CF /* CocopodCreate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocopodCreate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040702371D12DCB6008018CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040702391D12DCB6008018CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0407023A1D12DCB6008018CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0407023C1D12DCB6008018CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0407023D1D12DCB6008018CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		040702401D12DCB6008018CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		040702421D12DCB6008018CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		040702451D12DCB6008018CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		040702471D12DCB6008018CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0407024C1D12DCB6008018CF /* CocopodCreateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocopodCreateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040702501D12DCB6008018CF /* CocopodCreateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocopodCreateTests.m; sourceTree = "<group>"; };
+		040702521D12DCB6008018CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040702571D12DCB6008018CF /* CocopodCreateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocopodCreateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0407025B1D12DCB6008018CF /* CocopodCreateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocopodCreateUITests.m; sourceTree = "<group>"; };
+		0407025D1D12DCB6008018CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040703FF1D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive"; sourceTree = "<group>"; };
+		040704001D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html"; sourceTree = "<group>"; };
+		040704011D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040702301D12DCB6008018CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040702491D12DCB6008018CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040702541D12DCB6008018CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0407022A1D12DCB5008018CF = {
+			isa = PBXGroup;
+			children = (
+				040702351D12DCB6008018CF /* CocopodCreate */,
+				0407024F1D12DCB6008018CF /* CocopodCreateTests */,
+				0407025A1D12DCB6008018CF /* CocopodCreateUITests */,
+				040702341D12DCB6008018CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		040702341D12DCB6008018CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040702331D12DCB6008018CF /* CocopodCreate.app */,
+				0407024C1D12DCB6008018CF /* CocopodCreateTests.xctest */,
+				040702571D12DCB6008018CF /* CocopodCreateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040702351D12DCB6008018CF /* CocopodCreate */ = {
+			isa = PBXGroup;
+			children = (
+				040703FE1D12DCF0008018CF /* cocoaPods 按住步骤 */,
+				040702391D12DCB6008018CF /* AppDelegate.h */,
+				0407023A1D12DCB6008018CF /* AppDelegate.m */,
+				0407023C1D12DCB6008018CF /* ViewController.h */,
+				0407023D1D12DCB6008018CF /* ViewController.m */,
+				0407023F1D12DCB6008018CF /* Main.storyboard */,
+				040702421D12DCB6008018CF /* Assets.xcassets */,
+				040702441D12DCB6008018CF /* LaunchScreen.storyboard */,
+				040702471D12DCB6008018CF /* Info.plist */,
+				040702361D12DCB6008018CF /* Supporting Files */,
+			);
+			path = CocopodCreate;
+			sourceTree = "<group>";
+		};
+		040702361D12DCB6008018CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040702371D12DCB6008018CF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0407024F1D12DCB6008018CF /* CocopodCreateTests */ = {
+			isa = PBXGroup;
+			children = (
+				040702501D12DCB6008018CF /* CocopodCreateTests.m */,
+				040702521D12DCB6008018CF /* Info.plist */,
+			);
+			path = CocopodCreateTests;
+			sourceTree = "<group>";
+		};
+		0407025A1D12DCB6008018CF /* CocopodCreateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0407025B1D12DCB6008018CF /* CocopodCreateUITests.m */,
+				0407025D1D12DCB6008018CF /* Info.plist */,
+			);
+			path = CocopodCreateUITests;
+			sourceTree = "<group>";
+		};
+		040703FE1D12DCF0008018CF /* cocoaPods 按住步骤 */ = {
+			isa = PBXGroup;
+			children = (
+				040703FF1D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive */,
+				040704001D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html */,
+				040704011D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive */,
+			);
+			path = "cocoaPods 按住步骤";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040702321D12DCB6008018CF /* CocopodCreate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040702601D12DCB6008018CF /* Build configuration list for PBXNativeTarget "CocopodCreate" */;
+			buildPhases = (
+				0407022F1D12DCB6008018CF /* Sources */,
+				040702301D12DCB6008018CF /* Frameworks */,
+				040702311D12DCB6008018CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocopodCreate;
+			productName = CocopodCreate;
+			productReference = 040702331D12DCB6008018CF /* CocopodCreate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0407024B1D12DCB6008018CF /* CocopodCreateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040702631D12DCB6008018CF /* Build configuration list for PBXNativeTarget "CocopodCreateTests" */;
+			buildPhases = (
+				040702481D12DCB6008018CF /* Sources */,
+				040702491D12DCB6008018CF /* Frameworks */,
+				0407024A1D12DCB6008018CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0407024E1D12DCB6008018CF /* PBXTargetDependency */,
+			);
+			name = CocopodCreateTests;
+			productName = CocopodCreateTests;
+			productReference = 0407024C1D12DCB6008018CF /* CocopodCreateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		040702561D12DCB6008018CF /* CocopodCreateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040702661D12DCB6008018CF /* Build configuration list for PBXNativeTarget "CocopodCreateUITests" */;
+			buildPhases = (
+				040702531D12DCB6008018CF /* Sources */,
+				040702541D12DCB6008018CF /* Frameworks */,
+				040702551D12DCB6008018CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040702591D12DCB6008018CF /* PBXTargetDependency */,
+			);
+			name = CocopodCreateUITests;
+			productName = CocopodCreateUITests;
+			productReference = 040702571D12DCB6008018CF /* CocopodCreateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0407022B1D12DCB6008018CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ZhiYou;
+				TargetAttributes = {
+					040702321D12DCB6008018CF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0407024B1D12DCB6008018CF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 040702321D12DCB6008018CF;
+					};
+					040702561D12DCB6008018CF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 040702321D12DCB6008018CF;
+					};
+				};
+			};
+			buildConfigurationList = 0407022E1D12DCB6008018CF /* Build configuration list for PBXProject "CocopodCreate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0407022A1D12DCB5008018CF;
+			productRefGroup = 040702341D12DCB6008018CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040702321D12DCB6008018CF /* CocopodCreate */,
+				0407024B1D12DCB6008018CF /* CocopodCreateTests */,
+				040702561D12DCB6008018CF /* CocopodCreateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040702311D12DCB6008018CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040704021D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */,
+				040702461D12DCB6008018CF /* LaunchScreen.storyboard in Resources */,
+				040704081D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive in Resources */,
+				040702431D12DCB6008018CF /* Assets.xcassets in Resources */,
+				040704051D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html in Resources */,
+				040702411D12DCB6008018CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0407024A1D12DCB6008018CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040704061D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html in Resources */,
+				040704031D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */,
+				040704091D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040702551D12DCB6008018CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040704071D12DCF0008018CF /* CocoaPods无限卡在Setting up CocoaPods master repo，怎么办？ _ iOS开发 - CocoaChina CocoaChina_让移动开发更简单.html in Resources */,
+				040704041D12DCF0008018CF /* CocoaPods安装和使用教程 - 精灵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */,
+				0407040A1D12DCF0008018CF /* 解决 bad response Not Found 404 (http:ruby.taobao.org:latest_specs.4.8.gz) - 简书.webarchive in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0407022F1D12DCB6008018CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0407023E1D12DCB6008018CF /* ViewController.m in Sources */,
+				0407023B1D12DCB6008018CF /* AppDelegate.m in Sources */,
+				040702381D12DCB6008018CF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040702481D12DCB6008018CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040702511D12DCB6008018CF /* CocopodCreateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040702531D12DCB6008018CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0407025C1D12DCB6008018CF /* CocopodCreateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0407024E1D12DCB6008018CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040702321D12DCB6008018CF /* CocopodCreate */;
+			targetProxy = 0407024D1D12DCB6008018CF /* PBXContainerItemProxy */;
+		};
+		040702591D12DCB6008018CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040702321D12DCB6008018CF /* CocopodCreate */;
+			targetProxy = 040702581D12DCB6008018CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0407023F1D12DCB6008018CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040702401D12DCB6008018CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		040702441D12DCB6008018CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040702451D12DCB6008018CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0407025E1D12DCB6008018CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0407025F1D12DCB6008018CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040702611D12DCB6008018CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocopodCreate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou.CocopodCreate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		040702621D12DCB6008018CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocopodCreate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou.CocopodCreate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		040702641D12DCB6008018CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CocopodCreateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou.CocopodCreateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocopodCreate.app/CocopodCreate";
+			};
+			name = Debug;
+		};
+		040702651D12DCB6008018CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CocopodCreateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou.CocopodCreateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocopodCreate.app/CocopodCreate";
+			};
+			name = Release;
+		};
+		040702671D12DCB6008018CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CocopodCreateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou.CocopodCreateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CocopodCreate;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		040702681D12DCB6008018CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CocopodCreateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyou.CocopodCreateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CocopodCreate;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0407022E1D12DCB6008018CF /* Build configuration list for PBXProject "CocopodCreate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0407025E1D12DCB6008018CF /* Debug */,
+				0407025F1D12DCB6008018CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040702601D12DCB6008018CF /* Build configuration list for PBXNativeTarget "CocopodCreate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040702611D12DCB6008018CF /* Debug */,
+				040702621D12DCB6008018CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		040702631D12DCB6008018CF /* Build configuration list for PBXNativeTarget "CocopodCreateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040702641D12DCB6008018CF /* Debug */,
+				040702651D12DCB6008018CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		040702661D12DCB6008018CF /* Build configuration list for PBXNativeTarget "CocopodCreateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040702671D12DCB6008018CF /* Debug */,
+				040702681D12DCB6008018CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0407022B1D12DCB6008018CF /* Project object */;
+}
